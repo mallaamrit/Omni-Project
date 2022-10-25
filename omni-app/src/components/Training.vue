@@ -1,55 +1,38 @@
 <template>
-    <div class="flex border font-Roboto ">
-       
-       <AsideNavBar/>
-       
-        <div class="grid grid-cols-5 gap-5 mx-5 my-5 py-3 border"> 
-            <div class="rounded shadow-lg border " v-for="Card in Cards" :key="Card.title">
-                <img class="w-full" :src="Card.img" alt="image">
-                <div class=" border px-1  py-1">
-                    <p class="font-semibold text-lg">{{Card.title}}</p>
-                        <p class="text-[#9EB2CC] text-sm">{{Card.desc}}</p>
-                    </div>
-                        <div class="px-6 py-3">
-                            <span class=" bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-[#16A1EB] mr-2 mb-2"><a href="">{{Card.list}}</a></span>
-                        </div> 
-                </div>
-            </div>
+    <div class=" m-9 rounded overflow-hidden shadow-lg">
+        <div v-for="item in items" :key="item.title">
+        <img class="w-full" :src="item.img" alt="Sunset in the mountains">
+
+        <div class="flex justify-between border p-4">
+            <h1 class="text-gray-900 text-xl font-semibold not-italic">{{ item.title }}</h1>
+            <p class="text-md text-skynetblue font-normal leading-4">{{ item.list }}</p>
+        
+        </div>
+        <div class="px-6 py-4">
+            <div class="font-normal leading-5 not-italic text-skynetsecondaryblue">{{item.updatedDate}}</div>
         </div>
         
+        </div>
+    </div>
 </template>
 
 <script>
-import AsideNavBar from './AsideNavBar.vue';
 export default {
-    setup() {
+
+    data() {
         return {
-            Cards: [
+            items: [
                 {
-                    img: "../assets/images/res1.png",
-                    title: "SMD & Financial Loading",
-                    desc: "This is desc ksjfnskfj fskf",
-                    list: "view all"
+                    img:'../assets/images/img1.png',
+                    title: "Training",
+                    list: 'View all',
+                    updatedDate: '21.02.2022'
                 },
-                {
-                    img: "../assets/images/res1.png",
-                    title: "Media Finance Handbook",
-                    desc: "This is desc ksjfnskfj fskf",
-                    list: "view all"
-                },
-                {
-                    img: "../assets/images/res1.png",
-                    title: "Tools & Resources",
-                    desc: "This is desc ksjfnskfj fskf",
-                    list: "view all"
-                }
             ]
-        };
-    },
-    components: { AsideNavBar }
+
+        }
+
+    }
 }
 </script>
 
-<style lang="scss" scoped>
-
-</style>
