@@ -1,5 +1,6 @@
 <template>
     <div class="m-9 p-6 border">
+        <img v-if="image" src="image" />
         <div v-for="item in items" :key="item.title">
             <div  class="flex justify-between border p-4">
                 <h1 class="text-gray-900 text-xl font-semibold not-italic">{{ item.title }}</h1>

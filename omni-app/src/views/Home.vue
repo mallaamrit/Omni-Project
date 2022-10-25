@@ -6,12 +6,11 @@
             <button class="bg-blue-500 hover:bg-blue-700 block text-white font-bold py-4 px-8 border border-blue-700 rounded">
                 Button
             </button>
-
         </div>
 
         <div class=" p-6 mt-20">
             <div class="grid grid-cols-4 border font-Roboto">
-                <Resources />
+                <Resources/>
                 <Training />
                 <Contacts />
                 <Notifications />
