@@ -10,21 +10,17 @@ import Contacts from "./views/Contacts.vue";
 
 
 
-
-
-
-
-
 </script>
 
 <template>
   <div>
-    <Home/>
+  
+    <!-- <Home/>
     <Training />
     <Resources/>
-    <Finance/> 
+    <Finance/>--> 
     <Onboarding/>
-    <Contacts/>
+    <!-- <Contacts/> -->
   </div>
  
 </template>

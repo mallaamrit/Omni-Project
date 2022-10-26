@@ -3,7 +3,7 @@
         
             <div class="grid grid-cols-4 gap-8 font-Roboto">
                 <AsideNavBar />
-                <div>
+                <div class="text-lg">
                     Power Bi
                 </div>
             

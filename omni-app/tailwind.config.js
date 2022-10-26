@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       //custome font, colors,
       fontFamily: {
-        Roboto: ['Roboto']
+        'roboto': ['Roboto']
       },
       colors:{
 

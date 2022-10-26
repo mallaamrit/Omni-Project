@@ -13,7 +13,7 @@
                     </div>
 
                     <div class="p-4">
-                        <span class="text-md text-skynetblue font-normal leading-4">{{ item.list }}</span>
+                        <span class="text-md text-skynetblue font-normal leading-4 float-right">{{ item.list }}</span>
                     </div>
                 </div>
         
